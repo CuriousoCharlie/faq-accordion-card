@@ -26,5 +26,3 @@ accordion.addEventListener("click", e => {
     }
 
 }); 
-
-console.log(window.innerWidth);

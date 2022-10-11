@@ -34,6 +34,7 @@ Background gradient:
 
 body {
     background: linear-gradient(var(--bg-soft-violet), var(--bg-soft-blue));
+    background-attachment: fixed;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -102,49 +103,19 @@ h1 {
 }
 
 .attribution { 
-    /* position: absolute;
-    bottom: 0; */
+    position: relative;
+    top: 100px;
+    padding: 20px;
     font-size: 11px; 
     text-align: center; 
 }
     
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: black; 
 }
 
 @media only screen and (min-width: 1440px) {
 
-    /* .woman-illustration {
-        position: absolute;
-        top: -120px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100px;
-        height: 200px;
-    } 
-    
-    .accordion-card-container {
-    position: relative;
-    width: 90%;
-    height: 500px;
-    margin: 150px auto;
-    border-radius: 20px;
-    background-color: white;
-}
-
-.accordion {
-    position: absolute;
-    top: 200px;
-    width: 100%;
-}
-
-.faq-container {
-    width: 85%;
-    margin: 0 auto;
-    border-bottom: 1px solid var(--divider-grayish-blue);
-    position: relative;
-}
-    */
     .accordion-card-container {
         width: 70%;
         background: url("/images/bg-pattern-desktop.svg");
@@ -156,17 +127,10 @@ h1 {
     .woman-illustration {
         width: 150px;
         height: 300px;
-        top: 50%;
+        top: 250px;
         transform: translateY(-50%);
         left: -50px;
     }
-
-    /* .shadow {
-        position: absolute;
-        top: 5px;
-        left: 50%;
-        transform: translateX(-50%);
-    } */
     
     div.box::before {
         content: url("/images/illustration-box-desktop.svg");
@@ -177,14 +141,6 @@ h1 {
 
     .shadow {
         display: none;
-    }
-
-    h1 {
-        position: absolute;
-        top: 120px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: var(--text-dark-blue);
     }
 
     h1 {
